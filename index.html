@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container text-center">
+		<div class="video-body">
+	        <video controls="" name="media" id="video"><source src="http://template.callcall.cc/callcall/img/live.mp4" type="video/mp4"></video>
+	        <div class="progress-bar-wrapper">
+	        	<div class="time-text pull-left">
+	        		
+	        	</div>
+	        	<div class="progress-bar pull-left">
+	        		
+	        		<div class="played"><div class="pull-right duration-btn"></div></div>
+	        		
+	        	</div>
+	        	<div class="duration-text pull-right">
+	        		
+	        	</div>
+
+	        </div>
+	      </div>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<script src="js/demo2.js"></script>
+	<script type="text/javascript">
+		$('#video').setVideoBar();
+	</script>
+	
+</body>
+</html>

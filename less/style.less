@@ -1,0 +1,69 @@
+video{
+	max-width: 100%;
+	height:auto;
+}
+
+.progress-bar-wrapper{
+	width: 100%;
+	height:10px;
+	margin-top: 20px;
+
+	.time-text,.duration-text{
+		visibility: hidden;
+		padding: 0 10px;
+		width: 70px;
+		height:100%;
+		line-height: 10px;
+		font-size: .8em;
+	}
+
+	.time-text.active,.duration-text.active{
+		visibility: visible;
+	}
+
+	&:hover{
+		.progress-bar{
+			height: 10px;
+			margin-top: 0;
+			transition:all .5s;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-ms-transition: all .5s;
+			-o-transition: all .5s;
+		}
+		
+
+		.time-text, .duration-text{
+			visibility: visible;
+		}
+	}
+
+	.progress-bar{
+		background: #ddd;
+		
+		width: ~"calc(100% - 140px)";
+		height:3px;
+		position: relative;
+		margin-top: 3px;
+		border-radius: 8px;
+
+		.played{
+			background: #a11;
+			height:100%;
+			width: 0;
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+			
+		}
+
+		.duration-btn{
+			width: 20px;
+			height: 15px;
+			background: #fff;
+			border-radius: 3px;
+			position: relative;
+			top: -3px;
+			cursor: pointer;
+		}
+	}
+}
